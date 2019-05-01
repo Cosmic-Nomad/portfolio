@@ -1,6 +1,179 @@
+:root {
+  --mainFont: 'Roboto', sans-serif;
+  --secondFont: 'Montserrat', sans-serif;
+  --thirdFont: 'Open Sans', sans-serif;
+  --serifFont: 'Roboto Slab', serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--mainFont);
 }
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation {
+  height: 80px;
+  width: 100vw;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.33% 33.33% 33.33%;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#navigation #nav-empty {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+#navigation #nav-logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  text-align: center;
+}
+
+#navigation #nav-logo img {
+  margin: 5px 0;
+}
+
+#navigation #nav-links {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+#welcome {
+  height: 75vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg);
+  background-size: 100%;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px;
+  border-bottom: 5px solid #2366bd;
+  color: #fff;
+  text-shadow: 3px 3px 5px #111;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  -ms-grid-rows: 25% 50% 25%;
+      grid-template-rows: 25% 50% 25%;
+}
+
+#welcome div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#welcome div h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#welcome div p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+#split-layout {
+  height: 85vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px #111;
+  text-transform: capitalize;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 33.33% 33.33% 33.33%;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+#split-layout button {
+  color: #fff;
+  font-size: 16px;
+  background-color: #2366bd;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#split-layout .col-2 {
+  background-color: #aaa;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#split-layout .col-2 .box {
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+}
+
+#split-layout .col-2 .box h1 {
+  font-size: 2.5rem;
+}
+
+#split-layout #gfx-div {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#split-layout #web-div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(https://images.pexels.com/photos/247791/pexels-photo-247791.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/247791/pexels-photo-247791.png);
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */
