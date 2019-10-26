@@ -1,2 +1,3 @@
-# portfolio
-Portfolio of all my work
+## Jake Boz's Portfolio
+
+Created in 2019 by Jake Boz
