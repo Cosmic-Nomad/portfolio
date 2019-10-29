@@ -9,11 +9,33 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    background-color: #222222;
     font-family: var(--mainFont);
+    font-weight: 400;
 }
 
 #wrapper {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+
+
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 50px 5fr 50px 1fr;
+        grid-template-rows: repeat(13fr);
+    }
+
+
+
+
+
+
 }

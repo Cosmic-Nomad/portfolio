@@ -8,12 +8,30 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  background-color: #222222;
   font-family: var(--mainFont);
+  font-weight: 400;
 }
 
 #wrapper {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: auto;
+  overflow-y: hidden;
+}
+
+#wrapper .container {
+  width: 100vw;
+  height: auto;
+}
+
+#wrapper #grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 5fr 50px 1fr;
+      grid-template-columns: 1fr 50px 5fr 50px 1fr;
+  -ms-grid-rows: ()[13fr];
+      grid-template-rows: repeat(13fr);
 }
 /*# sourceMappingURL=style.css.map */
