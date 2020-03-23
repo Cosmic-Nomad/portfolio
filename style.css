@@ -34,4 +34,15 @@ body {
   -ms-grid-rows: ()[13fr];
       grid-template-rows: repeat(13fr);
 }
+
+#wrapper #grid-container #grid-navigation {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 13;
+  grid-row: 1 / 14;
+  background-color: #6f1d1b;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
