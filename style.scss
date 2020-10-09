@@ -4,46 +4,151 @@
     --secondFont: 'Montserrat', sans-serif;
     --thirdFont: 'Open Sans', sans-serif;
     --serifFont: 'Roboto Slab', serif;
+    --coloraccent1: rgb(92, 157, 131);
+    --main-background: rgba(34, 34, 34, 0.63);
+
+
+    /*
+    #222222 black
+    #294936 green
+    #6f1d1b red
+    #bb9457 yellow
+    #99582a orange
+    */
+
+    /* Web Palette
+    #5D9D83 Green
+    */
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #222222;
+    background-image: url(img/cosmic-3.jpeg);
+    background-size: cover;
     font-family: var(--mainFont);
     font-weight: 400;
 }
 
-#wrapper {
-    margin: 0;
-    padding: 0;
+#wrap-all {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 5fr 0.5fr;
+    grid-template-rows: 1fr 8fr 1fr;
     width: 100vw;
+    min-height: 100vh;
     height: auto;
-    overflow-y: hidden;
+    box-sizing: border-box;
+    border: 2px double fuchsia;
+    background-color: rgba($color: #000000, $alpha: 0.5);
 
+    #side-container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        border: 2px double darkorange;
 
-    .container {
-        width: 100vw;
-        height: auto;
-    }
-
-    #grid-container {
-        display: grid;
-        grid-template-columns: 1fr 50px 5fr 50px 1fr;
-        grid-template-rows: repeat(13fr);
-    
-        #grid-navigation {
-            grid-column: 1 / 2;
-            grid-row: 1 / 14;
-            background-color: #6f1d1b;
+        #side-box {
+            height: 100%;
+            width: 85%;
+            margin: 0 auto;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: var(--coloraccent1);
             color: #ffffff;
+
+            #identification-box {
+                border: 2px double black;
+                height: auto;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+
+                img {
+                    height: 10rem;
+                    border-radius: 50%;
+                    border: 4px solid white;
+                }
+
+                h2 {
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    padding: 0px;
+                }
+
+                h4 {
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    padding: 0px;
+                }
+            }
+
         }
-    
+
+        #sidebar-navigation {
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+
+            ul {
+                box-sizing: border-box;
+                border: 1px solid burlywood;
+                width: 100%;
+                height: auto;
+                padding-right: 25px;
+            }
+
+            li {
+                text-align: center;
+                font-weight: 300;
+                list-style-type: none;
+                text-transform: capitalize;
+                padding: 10px 0px;
+            }
+
+            li:hover {
+                background-color: rgba($color: #467a65, $alpha: 0.75);
+            }
+        }
     }
 
+    #content-container {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        border: 2px double turquoise;
 
-
-
-
+        #content-box {
+            height: auto;
+            min-height: 95%;
+            width: 95%;
+            background-color: var(--main-background);
+            margin: 0 auto;
+            text-transform: capitalize;
+            color: white;
+        }
+    }
 
 }
+
+
+
+
+
+
+/* Old Grid Code
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(13fr);
+    grid-template-rows: 78px 1fr 5fr 50px 1fr;
+    background-color: #ffffff;
+    height: 100vh;
+
+    #grid-navigation {
+        grid-column: 1 / 14;
+        grid-row: 1 / 2;
+        background-color: #ffffff;
+        color: #111;
+    }
+
+}
+
+*/
