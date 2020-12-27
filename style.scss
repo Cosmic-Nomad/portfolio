@@ -27,6 +27,10 @@ body {
     font-weight: 300;
 }
 
+.wrapper {
+    background-image: var(--background-img);
+}
+
 .wrapper div {
     padding: 15px;
 }
