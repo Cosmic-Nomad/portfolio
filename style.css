@@ -35,6 +35,25 @@ body {
   padding: 15px;
 }
 
+.wrapper .flex .sidebar h1, .wrapper .flex .sidebar h3 {
+  text-align: center;
+}
+
+.wrapper .flex .sidebar table {
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+}
+
+.wrapper .flex .sidebar table tr {
+  margin: 100px 0;
+}
+
+.wrapper .flex .sidebar table tr td {
+  text-align: left;
+}
+
 /* Flex Box Styles */
 @media (min-width: 468px) {
   .wrapper .flex {
