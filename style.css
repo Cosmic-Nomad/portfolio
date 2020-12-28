@@ -27,6 +27,8 @@ body {
 
 .wrapper {
   background-image: var(--background-img);
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .wrapper div {
@@ -45,16 +47,21 @@ body {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    color: #ffffff;
   }
   .wrapper .flex .sidebar {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
-    background-color: seagreen;
+    background-color: rgba(46, 139, 87, 0.6);
+    border: 3px solid seagreen;
+    border-radius: 15px;
   }
   .wrapper .flex .content {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
-    background-color: slateblue;
+    background-color: rgba(106, 90, 205, 0.6);
+    border: 3px solid slateblue;
+    border-radius: 15px;
   }
 }
 
@@ -69,16 +76,22 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-top: 10vh;
+    color: #ffffff;
   }
   .wrapper .flex .sidebar {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
-    background-color: seagreen;
+    min-height: 65vh;
+    border: 3px solid seagreen;
+    border-radius: 15px;
   }
   .wrapper .flex .content {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-    background-color: slateblue;
+    min-height: 65vh;
+    border: 3px solid slateblue;
+    border-radius: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

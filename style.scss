@@ -29,10 +29,13 @@ body {
 
 .wrapper {
     background-image: var(--background-img);
-}
+    min-height: 100vh;
+    width: 100vw;
 
-.wrapper div {
-    padding: 15px;
+    div {
+        padding: 15px;
+    }
+
 }
 
 /* Flex Box Styles */
@@ -45,15 +48,20 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            color:#ffffff;
 
             .sidebar {
                 flex-basis: 90%;
-                background-color: seagreen;
+                background-color: rgba(46, 139, 87, 0.6);
+                border: 3px solid rgb(46, 139, 87);
+                border-radius: 15px;
             }
 
             .content {
                 flex-basis: 90%;
-                background-color: slateblue;
+                background-color: rgba(106, 90, 205, 0.6);
+                border: 3px solid rgb(106, 90, 205);
+                border-radius: 15px;
             }
         }
 
@@ -69,15 +77,21 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            padding-top: 10vh;
+            color: #ffffff;
 
             .sidebar {
                 flex-basis: 20%;
-                background-color: seagreen;
+                min-height: 65vh;
+                border: 3px solid seagreen;
+                border-radius: 15px;
             }
 
             .content {
                 flex-basis: 70%;
-                background-color: slateblue;
+                min-height: 65vh;
+                border: 3px solid slateblue;
+                border-radius: 15px;
             }
         }
 
