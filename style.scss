@@ -5,7 +5,7 @@
     --serifFont: 'Roboto Slab', serif;
     --coloraccent1: rgb(92, 157, 131);
     --main-background: rgba(34, 34, 34, 0.63);
-    --background-img: url(img/cosmic-3.jpeg);
+    --background-img: url(img/cosmic-7.jpeg);
 
     /*
     #222222 black
@@ -29,6 +29,8 @@ body {
 
 .wrapper {
     background-image: var(--background-img);
+    background-clip: border-box;
+    background-size: cover;
     min-height: 100vh;
     width: 100vw;
 
@@ -37,25 +39,30 @@ body {
     }
 
     .flex {
-        .sidebar {
-            h1, h3 {
-                text-align: center;
-            }
-            table {
-                width: 85%;
-                margin: 0 auto;
-                color: white;
-                font-size: 20px;
-                
-                tr {
-                    margin: 100px 0;
-                    
-                    td {
 
-                        text-align: left;
-                    }
-                }
+        color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        background-color:rgba(34, 34, 34, 0.63);
+        height: 100vh;
+
+        .content {
+            text-align: center;
+            text-transform: capitalize;
+            background-color: rgba(106, 90, 205, 0.8);
+            border: 3px solid rgb(106, 90, 205);
+            border-radius: 15px;
+
+            flex-basis: 45%;
+
+            #header {
+                font-size: 3rem;
             }
+
+            #subline {
+                font-size: 3rem;
+            }
+
         }
     }
 }
@@ -67,23 +74,10 @@ body {
     .wrapper {
 
         .flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            color:#ffffff;
-
-            .sidebar {
-                flex-basis: 90%;
-                background-color: rgba(46, 139, 87, 0.6);
-                border: 3px solid rgb(46, 139, 87);
-                border-radius: 15px;
-            }
 
             .content {
-                flex-basis: 90%;
-                background-color: rgba(106, 90, 205, 0.6);
-                border: 3px solid rgb(106, 90, 205);
-                border-radius: 15px;
+                
+                
             }
         }
 
@@ -96,24 +90,9 @@ body {
     .wrapper {
 
         .flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding-top: 10vh;
-            color: #ffffff;
-
-            .sidebar {
-                flex-basis: 20%;
-                min-height: 65vh;
-                border: 3px solid seagreen;
-                border-radius: 15px;
-            }
 
             .content {
-                flex-basis: 70%;
-                min-height: 65vh;
-                border: 3px solid slateblue;
-                border-radius: 15px;
+                
             }
         }
 
